@@ -1,0 +1,45 @@
+For the following programs, make sure they do the following (as specified in the assignment): 
+
+1)	Upon the selection of an alphabet “A-Z” (within a BNF grammar of {a-z|A-Z|R+}), be able to match each letter with a “phonic sound”, with the Simpsons based example below: 
+
+Example:
+
+Spoken: “H-O-M-E-R”
+
+“Phonic Frog” Translated: “Hah Oh Me Eh Er” 
+
+2)	Usability should be key, since this is a fun application and a very educational one. 
+
+3)	Use only Java GUI / Applet Swing programming, similar to PDP’s Final AlphaVantage Bank Assignment, with both console and GUI compilation choices. For terminal, make sure the command javac phonic_frog_main.java compiles. 
+
+4)	To make things easier, I will attach a starter code in the repository, which has the following files, in a MVC architecture: 
+
+Model: 
+	phonic_frog_main.java 
+	graphics.java (for the Swing graphics library API) 
+
+View:
+	phonic_iview_gui.java
+	phonic_iview_console.java 
+
+Controller:
+	phonic_controller_gui.java
+	phonic_controller_console.java 
+
+5)	For usability boost, add in any and all try / catch / except error cases. Refer to PDP notes on how to successfully troubleshoot errors from the application. 
+
+Example, in a very basic form of psuedocode. 
+
+try { 
+	speak(“LeBron James 23”);
+} except {
+	ValueError(“23 is not a valid phonic.”);
+	System.out.exit(0);
+}
+
+6)	All button functionalities should be used properly, with 26 total alphabet letters “A-Z”, arrange the buttons wisely, similar to that of the simple calculator API from PDP. Be sure that usability and efficiency concepts are accounted for, as well as the Ten Minute Rule mentioned in the textbook (if application cannot be figured out in 10 minutes, must redesign). 
+
+7)	Don’t get too fancy with the colors, just green and yellow will do for now (think about UI color with regards to frog skin color and how a frog looks like). 
+
+8)	Test cases, including all assertions and suite classes, are to your own creation. Think from both PDP and SVS how to use coding exploits defense strategies (including ROP for Java) to prevent a malicious author ruining our Phonic Frog app! 
+
